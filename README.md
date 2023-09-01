@@ -1,1 +1,1 @@
-Here in this project we are using Javascript to create a cool image slider with anumated text.
+Here in this project we are using Javascript and css to create a cool image slider.
