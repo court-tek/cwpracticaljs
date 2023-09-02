@@ -24,6 +24,10 @@ export default {
       },
       maxWidth: {
         'custom1': '1200px',
+      },
+      backgroundImage:{
+        'skyline': 'url(https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/atlanta-skyline-night-high-contrast-black-white-light-trails-85617749.jpg)',
+        'cfamily': 'url(https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/family1.jpg)'
       }
     },
   },

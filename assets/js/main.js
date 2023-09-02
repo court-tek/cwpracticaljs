@@ -1,24 +1,44 @@
-import '../css/style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './public/js/counter.js'
+let init = () => {
+  let container = document.getElementsByClassName('jumbo-slider__container')[0], 
+  slides = document.getElementsByClassName('jumbo-slider__slide'),
+  circles = document.getElementsByClassName('jumbo-slider__circle'),
+  links = document.getElementsByClassName('jumbo-slider__link'),
+  current = 1,
+  time = 6000;
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+  slides[0].classList.add('jumbo-slider__slide--active');
+  links[current-1].classList.add('jumbo-slider__link--active');
 
-setupCounter(document.querySelector('#counter'))
+  // update elipsis
+  let updateNav = (current) => {
+    console.log(`update current: ${current}`)
+    for (let index = 0; index < slides.length; index++) {
+      links[index].classList.remove('jumbo-slider__link--active');
+      circles[index].classList.remove('jumbo-slider__circle--filled');
+    }
+    links[current-1].classList.add('jumo-slider__link--active');
+    links[current-1].classList.add('jumo-slider__link--active');
+  }
+  
+  let startSlide = () => {
+    setInterval(() => {
+      console.log(`update current test: ${current}`)
+      slides[1].classList.add('jumbo-slider__slide--active');
+      slides[0].classList.remove('jumbo-slider__slide--active');
+      
+      console.log(`¿Que?: ${slides.length}`)
+      if (current < slides.length) {
+        current++
+        updateNav(current)
+      } else {
+        current = 1;
+      }
+      container.appendChild(slides[0].cloneNode([true]));
+      container.removeChild(slides[0]);
+    }, 6000)
+  }
+
+  startSlide();
+}
+
+init();
