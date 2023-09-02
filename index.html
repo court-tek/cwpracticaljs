@@ -1,49 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <header class="fixed p-5 flex text-white z-10 justify-between w-full bg-black">
-      <div class="page-header__logo">
-        Logo
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header id="page-header" class="p-5 flex fixed text-black z-30 justify-between w-full bg-white">
+    <div id="page-header__logo" class="">Logo</div>
+    <nav id="page-header__nav" class="text-black no-decoration px-2.5">
+      <a href="#">Vehicle</a>
+      <a href="#">Shopping</a>
+      <a href="#">Inventory</a>
+    </nav>
+  </header>
+  <main>
+    <section id="jumbo-slider" class="h-full w-full bg-black relative overflow-hidden">
+      <ul id="jumbo-slider__container" class="relative">
+        <li id="jumbo-slider__slide" attr="1" class="w-full h-screen">
+          <div id="jumbo-slider__slide-bg" class="bg-cover bg-center w-full h-screen cursor-pointer opacity-50 transition-opacity duration-200 ease-in-out saturate-0 absolute z-10"></div>
+          <div id="container" class="max-w-custom1 w-full h-full m-auto">
+            <div id="jumbo-slider__info" class="flex flex-col justify-center relative z-10 h-full w-full">
+              <div id="jumbo-slider__slide-heading" class="text-5xl font-bold text-cp2 relative opacity-50 transition-transform duration-500 ease-in-out delay-75 transition-opacity mb-8 font-primary">
+                High Speed,<br>
+                Affordable<br>
+                Internet For<br>
+                Our Community.
+              </div>
+              <div id="jumbo-slider__title" class="font-3xl font-bold uppercase bg-white text-black p-2.5 w-fit mb-8 relative opacity-50 transition-transform duration-500 ease-in-out delay-100 transition-opacity">
+                Born to perform, developed to outperform
+              </div>
+              <p id="jumbo-slider__description" class="max-w-xl leading-5 text-white relative opacity-50 transition-transform ease-in-out duration-500 delay-150 transition-opacity">
+                Forged aluminum dominates the 4-wheel double-wishbone AMG RIDE CONTROL suspension with 3-stage damping. Coil-overs at the rear are hub-mounted for extreme precision. The GT C adds active rear-wheel steering. AMG DYNAMIC SELECT lets you dial in the throttle, shifting, chassis, exhaust and more.
+              </p>
+            </div>
+          </div>
+          <div id="jumbo-slider__timeline" class="fixed bottom-0 w-full z-10">
+            <div id="jumbo-slider__line" class="h-1 w-0 bg-white transition-width duration-500 ease-in-out">
+            </div>
+          </div>
+        </li>
+
+        <li class="jumbo-slider__slide" attr="2">
+          <div id="jumbo-slider__slide-bg">
+            <iframe id="jumbo-slider__video-player" class="w-full h-screen scale-150" width="560" height="315" src="https://www.youtube.com/embed/1K-9w93O3-g?autoplay=1&mute=1&t=0m0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="container">
+            <div class="jumbo-slider__info">
+              <div class="jumbo-slider__slide-number">
+                Clayton County<br>
+                Packages and<br>
+                Pricing
+              </div>
+              <div class="jumbo-slider__title">
+                Born to perform, developed to outperform
+              </div>
+              <p class="jumbo-slider__description">
+                Forged aluminum dominates the 4-wheel double-wishbone AMG RIDE CONTROL suspension with 3-stage damping. Coil-overs at the rear are hub-mounted for extreme precision. The GT C adds active rear-wheel steering. AMG DYNAMIC SELECT lets you dial in the throttle, shifting, chassis, exhaust and more.
+              </p>
+            </div>
+          </div>
+          <div class="jumbo-slider__timeline">
+            <div class="jumbo-slider__line">
+            </div>
+          </div>
+        </li>
+        <li class="jumbo-slider__slide" attr="3">
+          <div class="jumbo-slider__slide-bg" style="background: url('img/gwagon.jpg')">
+
+          </div>
+          <div class="container">
+            <div class="jumbo-slider__info">
+              <div class="jumbo-slider__slide-number">
+                03
+              </div>
+              <div class="jumbo-slider__title">
+                Born to perform, developed to outperform
+              </div>
+              <p class="jumbo-slider__description">
+                Forged aluminum dominates the 4-wheel double-wishbone AMG RIDE CONTROL suspension with 3-stage damping. Coil-overs at the rear are hub-mounted for extreme precision. The GT C adds active rear-wheel steering. AMG DYNAMIC SELECT lets you dial in the throttle, shifting, chassis, exhaust and more.
+              </p>
+            </div>
+          </div>
+          <div class="jumbo-slider__timeline">
+            <div class="jumbo-slider__line">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id="jumbo-slider__nav" class="flex absolute top-36 right-0 [writing-mode:vertical-lr] z-10">
+        <a href="#" id="jumbo-slider__link" class="text-xl text-cp1 uppercase p-5 no-decoration">01 AMG GT</a>
+        <a href="#" id="jumbo-slider__link" class="text-xl text-white uppercase p-5 no-decoration">02 Maybach GLS</a>
+        <a href="#" id="jumbo-slider__link" class="text-xl text-white uppercase p-5 no-decoration">03 AMG G-Wagon</a>
       </div>
-      <nav class="page-header__nav">
-        <a href="#" class="capitalize mx-2">home</a>
-        <a href="#" class="capitalize mx-2">services</a>
-        <a href="#" class="capitalize mx-2">shop</a>
-        <a href="#" class="capitalize mx-2">support</a>
-        <a href="#" class="capitalize mx-2">my account</a>
-        <a href="#" class="capitalize mx-2">get started</a>
-      </nav>
-    </header>
-    <main>
-      <section id="jumbo-slider" class="h-screen bg-neutral-900">
-        <ul id="jumbo-slider__container" class="relative">
-          <li id="jumbo-slider__slide" attr="1" class="bg-[url(./assets/images/family.jpg')]"></li>
-          <li id="jumbo-slider__slide" attr="2"></li>
-          <li id="jumbo-slider__slide" attr="3"></li>
-        </ul>
-        <div id="jumbo-slider__nav" class="flex absolute top-24 right-0 [writing-mode:vertical-lr] z-4">
-          <a href="#" id="jumbo-slider__link" class="text-base uppercase p-5 no-underline text-cp1">clayton county</a>
-          <a href="#" id="jumbo-slider__link" class="text-base text-white uppercase p-5 no-underline">clayton county</a>
-          <a href="#" id="jumbo-slider__link" class="text-base text-white uppercase p-5 no-underline">clayton county</a>
-        </div>
-        <div id="jumbo-slider__elipsis" class="w-full h-screen left-0 top-0 flex justify-center flex-col px-5">
-          <div id="jumbo-slider__circle" class="jumbo-slider--filled w-5 h-5 border-2 border-solid border-cp1 rounded-xl mb-2.5 bg-cp1"></div>
-          <div id="jumbo-slider__circle" class="jumbo-slider--filled w-5 h-5 border-2 border-solid border-cp1 rounded-xl mb-2.5"></div>
-          <div id="jumbo-slider__circle" class="jumbo-slider--filled w-5 h-5 border-2 border-solid border-cp1 rounded-xl mb-2.5"></div>
-        </div>
-      </section>
-    </main> 
-    <h1 class="text-xl font-primary">Courtney</h1>
-    <h2 class="text-base font-secondary">Girley</h2>
-    <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consequatur, sequi nulla impedit quasi cum! Officia consequuntur id, dolorem mollitia tenetur facilis ex quis delectus molestias eligendi dignissimos quae nulla? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus magnam minus cumque tenetur perspiciatis quod quidem vel illum at. Necessitatibus, cum voluptas asperiores quos sunt modi rem iusto hic voluptatem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id eaque porro enim dignissimos nostrum facere repellendus cumque aperiam aspernatur excepturi quo, officiis animi ad voluptatum eius soluta natus incidunt iure.</footer>
-    <script type="module" src="./js/main.js"></script>
-  </body>
+      <div id="jumbo-slider__elipsis" class="w-full h-screen absolute left-0 top-0 flex justify-center flex-col z-10">
+        <div id="jumbo-slider__circle" class="w-8 h-8 border-2 border-solid border-cp1 rounded-3xl mb-2.5 bg-cp1"></div>
+        <div id="jumbo-slider__circle" class="w-8 h-8 border-2 border-solid border-cp1 rounded-3xl mb-2.5"></div>
+        <div id="jumbo-slider__circle" class="w-8 h-8 border-2 border-solid border-cp1 rounded-3xl mb-2.5"></div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
 </html>

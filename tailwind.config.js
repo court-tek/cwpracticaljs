@@ -11,7 +11,7 @@ export default {
     extend: {
       colors: {
         cp1: '#BB6CE7',
-        airbRed2: 'hsl(333, 94%, 44%)',
+        cp2: '#5B4387',
         airbRed3: 'hsl(343, 79%, 51%)',
         airbRed4: 'hsl(349, 100%, 61%)',
         airbBlanco: 'hsl(180, 100%, 100%)',
@@ -21,6 +21,9 @@ export default {
       fontFamily: {
         'primary': ['Inter'],
         'secondary': ['Avenir']
+      },
+      maxWidth: {
+        'custom1': '1200px',
       }
     },
   },
