@@ -41,4 +41,4 @@ let init = () => {
   startSlide();
 }
 
-init();
+// init();
