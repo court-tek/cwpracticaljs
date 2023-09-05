@@ -7,21 +7,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/main.css">
-  <title>Vite App</title>
+  <title>Go Culture Wireless</title>
 </head>
 
-<body class="bg-gray-100">
-  <header class="page-header bg-white text-black">
+<body class="bg-gray-100 relative">
+  <div id="logodrop" class="fixed top-0 left-0 z-30 bg-white p-6 rounded-br-xl">
     <div class="page-header__logo">
-      <img class="w-12 h-auto"
+      <img class="object-contain h-12 md:h-20"
         src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/black_logo_transparent_background.png"
         alt="">
     </div>
-    <nav class="page-header__nav">
-      <a href="#" class="text-black">services</a>
-      <a href="#" class="text-black">shop</a>
-      <a href="#" class="text-black">support</a>
-      <a href="#" class="text-black">get started</a>
+  </div>
+  <header class="page-header bg-white text-black flex flex-row-reverse">
+    
+    <nav class="navbar-toggler page-header__nav cursor-pointer flex flex-row-reverse md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+      </svg>
+    </nav>
+    <nav class="page-header__nav hidden md:flex flex-row">
+      <a href="#" class="text-black capitalize self-center">services</a>
+      <a href="#" class="text-black capitalize self-center">shop</a>
+      <a href="#" class="text-black capitalize self-center">support</a>
+      <div class="rounded bg-cp2 p-2.5 rounded-lg hover:bg-violet-900 hove hover:shadow-xl transition duration-150 ease-in-out">
+        <a href="#" class="block text-white capitalize">get started</a>
+      </div>
     </nav>
   </header>
   <main>
@@ -32,35 +42,32 @@
             <div class="jumbo-slider__line">
             </div>
           </div> -->
-          <div class="jumbo-slider__slide-bg" style="">
-            <iframe class="jumbo-slider__video-player" width="560" height="315"
-              src="https://www.youtube.com/embed/1K-9w93O3-g?autoplay=1&mute=1&t=0m0s" title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+          <div class="jumbo-slider__slide-bg bg-skyline">
+            
           </div>
           <div class="container">
             <div class="jumbo-slider__info">
-              <div class="jumbo-slider__slide-number text-cp1 text-6xl">
+              <div class="jumbo-slider__slide-number text-cp1 text-4xl md:text-6xl">
                 High-Speed,<br>
                 Affordable<br>
                 Internet For<br>
                 Our Community.
               </div>
-              <div class="jumbo-slider__title">
+              <!-- <div class="jumbo-slider__title">
                 Born to perform, developed to outperform
-              </div>
-              <p class="jumbo-slider__description text-xl">
-                Forged aluminum dominates the 4-wheel double-wishbone AMG RIDE CONTROL suspension with 3-stage damping.
-                Coil-overs at the rear are hub-mounted for extreme precision. The GT C adds active rear-wheel steering.
-                AMG DYNAMIC SELECT lets you dial in the throttle, shifting, chassis, exhaust and more.
+              </div> -->
+              <p class="jumbo-slider__description text-md md:text-xl">
+                Internet designed with you in mind! Check to see if your address is available for service now!
               </p>
+              <div id="pricing-table__subscribe-btn"
+                class="capitalze w-[25%] border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 bg-cp2 text-white hover:bg-violet-900 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
+                get started
+              </div>
             </div>
           </div>
         </li>
         <li class="jumbo-slider__slide" attr="2">
           <div class="jumbo-slider__slide-bg bg-cfamily">
-
           </div>
           <div class="container">
             <div class="jumbo-slider__info">
@@ -84,9 +91,14 @@
             </div>
           </div> -->
         </li>
-        <li class="jumbo-slider__slide" attr="3">
-          <div class="jumbo-slider__slide-bg bg-skyline">
-
+        <!-- <li class="jumbo-slider__slide" attr="3">
+          <div class="jumbo-slider__slide-bg">
+            <iframe class="jumbo-slider__video-player" width="560" height="315"
+              src="https://www.youtube.com/embed/1K-9w93O3-g?autoplay=1&mute=1&t=0m0s" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
           </div>
           <div class="container">
             <div class="jumbo-slider__info">
@@ -103,21 +115,21 @@
               </p>
             </div>
           </div>
-          <!-- <div class="jumbo-slider__timeline">
+           <div class="jumbo-slider__timeline">
             <div class="jumbo-slider__line">
             </div>
-          </div> -->
-        </li>
+          </div>
+        </li> -->
       </ul>
       <div class="jumbo-slider__nav">
-        <a href="#" class="jumbo-slider__link text-cp1">Clayton</a>
-        <a href="#" class="jumbo-slider__link">Internetiv</a>
+        <!-- <a href="#" class="jumbo-slider__link text-cp1">Clayton</a> -->
         <a href="#" class="jumbo-slider__link">Affordable</a>
+        <a href="#" class="jumbo-slider__link">internet</a>
       </div>
       <div class="jumbo-slider__elipsis">
         <div class="jumbo-slider__circle bg-cp1"></div>
         <div class="jumbo-slider__circle border-solid border border-cp1"></div>
-        <div class="jumbo-slider__circle border-solid border border-cp1"></div>
+        <!-- <div class="jumbo-slider__circle border-solid border border-cp1"></div> -->
       </div>
     </section>
   </main>
@@ -140,7 +152,7 @@
           <!-- heading -->
           <div class="rounded-l-full bg-cp2 md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp1">01</div>
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">01</div>
               <h3 class="text-base text-white font-bold md:mb-4 md:hidden font-primary">
                 Affordable Price
               </h3>
@@ -161,18 +173,18 @@
           <!-- heading -->
           <div class="rounded-l-full bg-cp2 md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp1">02</div>
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">02</div>
               <h3 class="text-base text-white font-bold md:mb-4 md:hidden font-primary">
-                Affordable Price
+                community engagement
               </h3>
             </div>
           </div>
           <div class="">
             <h3 class="text-black hidden md:block font-primary text-lg font-semibold md:block">
-              Affordable Price
+              community engagement
             </h3>
             <p class="text-black font-secondary">
-              Internet is Essential. It shouldn’t be priced as a luxury.
+              We invest in the communities we serve.
             </p>
           </div>
         </div>
@@ -180,18 +192,18 @@
           <!-- heading -->
           <div class="rounded-l-full bg-cp2 md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp1">02</div>
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">03</div>
               <h3 class="text-base text-white font-bold md:mb-4 md:hidden font-primary">
-                Affordable Price
+                24/7 support
               </h3>
             </div>
           </div>
           <div class="">
             <h3 class="text-black hidden md:block font-primary text-lg font-semibold md:block">
-              Affordable Price
+              24/7 support
             </h3>
             <p class="text-black font-secondary">
-              Internet is Essential. It shouldn’t be priced as a luxury.
+              Customer support that reflects the community you live in.
             </p>
           </div>
         </div>
@@ -202,7 +214,8 @@
   <section id="pricing-tables" class="mt-11 md:mt-40">
     <div id="pricing-tables__container" class="container px-4 mx-auto mt-10 flex flex-wrap">
       <!-- plan 1 -->
-      <div id="pricing-tables__table" class="flex-gridish mb-4 bg-white rounded-lg shadow mb-4 hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
+      <div id="pricing-tables__table"
+        class="flex-gridish mb-4 bg-white rounded-lg shadow mb-4 hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
         <h3 id="pricing-tables__plan" class="text-gray-600 text-lg">100 Mbps</h3>
         <h6 class="text-sm text-cp2 mt-2">starting at</h6>
         <p id="pricing-tables__price" class="text-gray-600 mt-1"><span class="font-bold text-black text-4xl">$5</span>
@@ -251,7 +264,8 @@
           choose plan</div>
       </div>
       <!-- plan 2 -->
-      <div id="pricing-tables__table" class="flex-gridish mb-4 bg-white rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
+      <div id="pricing-tables__table"
+        class="flex-gridish mb-4 bg-white rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
         <h3 id="pricing-tables__plan" class="text-gray-600 text-lg">300 Mbps</h3>
         <h6 class="text-sm text-cp2 mt-2">starting at</h6>
         <p id="pricing-tables__price" class="text-gray-600 mt-1"><span class="font-bold text-black text-4xl">$35</span>
@@ -302,7 +316,8 @@
       </div>
 
       <!-- plan 3 -->
-      <div id="pricing-tables__table" class="flex-gridish mb-4 bg-cp2 rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
+      <div id="pricing-tables__table"
+        class="flex-gridish mb-4 bg-cp2 rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
         <h3 id="pricing-tables__plan" class="text-white text-lg">500 Mbps</h3>
         <h6 class="text-sm text-white mt-2">starting at</h6>
         <p id="pricing-tables__price" class="text-white mt-1"><span class="font-bold text-white text-4xl">$55</span>
@@ -352,7 +367,8 @@
           choose plan</div>
       </div>
       <!-- plan 4 -->
-      <div id="pricing-tables__table" class="flex-gridish mb-4 bg-white rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
+      <div id="pricing-tables__table"
+        class="flex-gridish mb-4 bg-white rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
         <h3 id="pricing-tables__plan" class="text-gray-600 text-lg">1 Gbps</h3>
         <!-- <h6 class="text-sm text-cp2 mt-2">starting at</h6> -->
         <!-- <p id="pricing-tables__price" class="text-gray-600 mt-1"><span class="font-bold text-black text-4xl">$35</span>
@@ -409,11 +425,14 @@
   <section id="acp-notice" class="mt-11 md:mt-40">
     <div id="acp-notice__container" class="container px-4 mx-auto mt-10 grid gap-6 md:grid-flow-col md:auto-cols-fr">
       <div class="">
-        <h1 class="text-black font-primary font-semibold text-3xl">$30 Monthly discount to all qualified <span class="text-cp2">Affordable Connectivity Program</span> Customers</h1>
+        <h1 class="text-black font-primary font-semibold text-3xl">$30 Monthly discount to all qualified <span
+            class="text-cp2">Affordable Connectivity Program</span> Customers</h1>
       </div>
       <div class="">
-        <p class="w-3/4 text-base font-secondary text-black">Am I eligible for the Affordable Connectivity Program? Click here to see if you qualify.</p>
-        <div id="acp-notice__check-btn" class="capitalze w-full lg:w-[33%] border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-white bg-cp2 hover:bg-violet-900 hover:shadow-xl transition duration-150 ease-in-out">
+        <p class="w-3/4 text-base font-secondary text-black">Am I eligible for the Affordable Connectivity Program?
+          Click here to see if you qualify.</p>
+        <div id="acp-notice__check-btn"
+          class="capitalze w-full lg:w-[33%] border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-white bg-cp2 hover:bg-violet-900 hover:shadow-xl transition duration-150 ease-in-out">
           learn more
         </div>
       </div>
@@ -424,20 +443,255 @@
 
       <div class="grid gap-6 md:grid-flow-col md:auto-cols-fr">
         <div id="about-us__image" class="">
-          <img src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/IMG_7406.jpeg" alt="" class="rounded-xl">
+          <img src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/IMG_7406.jpeg"
+            alt="" class="rounded-xl">
         </div>
         <div id="about-us__paragraph" class="">
-          <h1 class="text-white font-primary font-semibold text-xl bg-cp1 block w-[33%] text-center rounded py-2">About Us</h1>
-          <h1 id="about-us__heading" class="text-3xl mt-4 font-semibold text-white font-primary">We Are Changing the Way the World Thinks About Internet</h1>
-          <p class="w-full lg:w-3/4  text-xl font-secondary text-white mt-7">Even in 2022, between 9 to 12 million children in the U.S. and 1.3 billion worldwide lack access to quality and affordable Internet. Historically excluded communities are missing out on growth opportunities without internet access.</p>
+          <h1 class="text-white font-primary font-semibold text-xl bg-cp1 block w-[33%] text-center rounded py-2">About
+            Us</h1>
+          <h1 id="about-us__heading" class="text-3xl mt-4 font-semibold text-white font-primary">We Are Changing the Way
+            the World Thinks About Internet</h1>
+          <p class="w-full lg:w-3/4  text-xl font-secondary text-white mt-7">Even in 2022, between 9 to 12 million
+            children in the U.S. and 1.3 billion worldwide lack access to quality and affordable Internet. Historically
+            excluded communities are missing out on growth opportunities without internet access.</p>
         </div>
       </div>
     </div>
   </section>
-  <section id="partners" class=""></section>
-  <footer class="mt-11 md:mt-40">
-    <h1 class="text-black">Hello</h1>
+  <section id="partners" class="mt-11 md:mt-40">
+    <div id="partners__container" class="container px-4 mx-auto mt-10 flex flex-col items-center flex-wrap">
+      <h2 class="text-black text-bold text-4xl mb-5">Our Partners</h2>
+      <div id="partners__container" class="grid gap-6 md:grid-flow-col md:auto-cols-fr">
+        <div id="partners__img-container" class="flex"><img class="object-contain  block h-16"
+            src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/20a21fb9373f1c605e003a7a9466741db7f3cab9/assets/images/630bb0b7e88bc05f521f724a_logo.svg"
+            alt=""></div>
+        <div id="partners__img-container" class="flex justify-center"><img class="object-contain  block h-16"
+            src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/630bb2bbc302738922aac9d9_East-Point-Logo-New-removebg-preview.webp"
+            alt=""></div>
+        <div id="partners__img-container" class="flex"><img class="object-contain  block h-16"
+            src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/6310dfdc9176f1379518f9d2_logoGNC-removebg-preview.webp"
+            alt=""></div>
+        <div id="partners__img-container" class="flex justify-center"><img class="object-contain  block h-16"
+            src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/630d889d2b4487282fd73d3a_Microsoft-Logo-p-500.webp"
+            alt=""></div>
+        <div id="partners__img-container" class="flex justify-center md:justify-start"><img
+            class="object-contain  block h-16"
+            src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/630e318eeec8a9bd9e386e86_Crown_Castle-Logo.png"
+            alt=""></div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="mt-11 md:mt-40 bg-[#232329]">
+    <div id="footer__container" class="px-4 mt-10 flex flex-wrap">
+      <!-- Flex Container -->
+      <div class="flex flex-col-reverse justify-between py-10 mx-auto space-x-0 md:flex-row md:space-x-12">
+        <!-- Logo and social links container -->
+        <div class="flex flex-col-reverse items-center mt-6 justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+          <!-- Logo -->
+          <a href="#" class="">
+            <div class="flex flex-col items-left space-y-8 text-airbBlanco text-lg">
+              <div class="text-white text-2xl">
+                <img class="object-contain h-20" src="./assets/images/white-logo.png" alt="">
+              </div>
+              <p class="font-secondary text-white text-sm">address:<br>630 Travis St NW, Atlanta, GA 30318</p>
+              <p class="font-secondary text-white text-sm">24x7 Support Contact: 1.877.706.9600</p>
+              <div class="invisible text-white text-2xl">
+                Tech University Logo Goes Here.
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- List Container -->
+         <!-- Accordion Container -->
+         <div id="accordion-menu" class="grid md:hidden max-w-3xl">
+          <div class="accordion-menu__contentBx">
+            <div class="accordion-menu__label">
+              <span class="uppercase">sitemap</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>              
+            </div>
+            <div class="accordion-menu__content space-y-2">
+              <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">home</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">services</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">community</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">blog</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">acp</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">contact us</a>
+            </div>
+          </div>
+          <div class="accordion-menu__contentBx">
+            <div class="accordion-menu__label">
+              <span class="uppercase">company</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>              
+            </div>
+            <div class="accordion-menu__content">
+              <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">about us</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">careers</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">inquiries</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">privacy policy</a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize">terms & conditions</a>
+            </div>
+          </div>
+          <div class="accordion-menu__contentBx">
+            <div class="accordion-menu__label ">
+              <span class="uppercase">social</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>              
+            </div>
+            <div class="accordion-menu__content flex">
+              <a href="#" class="mb-3.5 hover:text-brightRed text-md font-light font-secondary capitalize flex mt-4">
+                <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <span class="ml-2">facebook</span>
+              </a>
+              <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
+                <img class="object-contain  block h-5" src="./assets/images/logo-white.png" alt="">
+                <span class="ml-2">twitter</span>
+              </a>
+              <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
+                <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <span class="ml-2">linkedin</span>
+              </a>
+              <a href="#" class="hover:text-brightRed font-secondary capitalize flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5px"><g><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><rect x="0.73" y="2.5" width="22.54" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect><line x1="19.48" y1="21.5" x2="4.48" y2="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <span class="ml-2">youtube</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex justify-around space-x-28">
+          <div class="flex flex-col text-white space-y-2">
+            <a href="#" class="hover:text-brightRed mb-2.5 font-semibold text-md uppercase font-primary">sitemap</a>
+            <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize">home</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">services</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">community</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">blog</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">acp</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">contact us</a>
+          </div>
+          <div class="flex flex-col text-white space-y-2">
+            <a href="#" class="hover:text-brightRed mb-2.5 font-semibold text-md uppercase font-primary">company</a>
+            <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize">about us</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">careers</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">inquiries</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">privacy policy</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">terms & conditions</a>
+          </div>
+          <div class="flex flex-col text-white">
+            <a href="#" class="hover:text-brightRed mb-4 font-semibold text-md uppercase font-primary">social</a>
+            <a href="#" class="mb-3.5 hover:text-brightRed text-md font-light font-secondary capitalize flex">
+              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <span class="ml-2">facebook</span>
+            </a>
+            <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
+              <img class="object-contain  block h-5" src="./assets/images/logo-white.png" alt="">
+              <span class="ml-2">twitter</span>
+            </a>
+            <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
+              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <span class="ml-2">linkedin</span>
+            </a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5px"><g><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><rect x="0.73" y="2.5" width="22.54" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect><line x1="19.48" y1="21.5" x2="4.48" y2="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+              <span class="ml-2">youtube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Input Container -->
+    <div class="flex flex-col justify-center bg-[#141417] w-full p-6">
+      <div class="text-white text-center md:block">
+        Copyright &copy; 2022, All Rights Reserved
+      </div>
+    </div>
   </footer>
+  <section class="mobile-menu z-40 bg-[#232329]">
+    <div class="mobile-menu__sticky-logo relative">
+      <a class="mobile-menu__logo z-10">
+        <img class="new-header__clarks-logo align-content-center object-contain h-20" src="./assets/images/white-logo.png" alt="clarks">
+      </a>
+
+      <div class="mobile-menu__close-btn dick p-6 z-30 absolute top-0 left-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>      
+      </div>
+    </div>
+
+    
+    
+    <div class="mobile-menu__links">
+      <div id="accordion-menu" class="grid md:hidden max-w-3xl">
+        <div class="accordion-menu__contentBx">
+          <div class="accordion-menu__label">
+            <span class="uppercase">sitemap</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>              
+          </div>
+          <div class="accordion-menu__content space-y-2">
+            <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">home</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">services</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">community</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">blog</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">acp</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">contact us</a>
+          </div>
+        </div>
+        <div class="accordion-menu__contentBx">
+          <div class="accordion-menu__label">
+            <span class="uppercase">company</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>              
+          </div>
+          <div class="accordion-menu__content">
+            <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">about us</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">careers</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">inquiries</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">privacy policy</a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize">terms & conditions</a>
+          </div>
+        </div>
+        <div class="accordion-menu__contentBx">
+          <div class="accordion-menu__label ">
+            <span class="uppercase">social</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>              
+          </div>
+          <div class="accordion-menu__content flex">
+            <a href="#" class="mb-3.5 hover:text-brightRed text-md font-light font-secondary capitalize flex mt-4">
+              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <span class="ml-2">facebook</span>
+            </a>
+            <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
+              <img class="object-contain  block h-5" src="./assets/images/logo-white.png" alt="">
+              <span class="ml-2">twitter</span>
+            </a>
+            <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
+              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <span class="ml-2">linkedin</span>
+            </a>
+            <a href="#" class="hover:text-brightRed font-secondary capitalize flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5px"><g><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><rect x="0.73" y="2.5" width="22.54" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect><line x1="19.48" y1="21.5" x2="4.48" y2="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+              <span class="ml-2">youtube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Input Container -->
+    <div class="flex flex-col mt-32 justify-center bg-[#232329] w-full p-6">
+      <div class="text-white text-center md:block">
+        Copyright &copy; 2022, All Rights Reserved
+      </div>
+    </div>
+  </section>
   <script type="module" src="./assets/js/main.js"></script>
 </body>
 

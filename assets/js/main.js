@@ -1,4 +1,7 @@
 let init = () => {
+  // *************************************************
+  // Hero Section Animations y video, hero section
+  // *************************************************
   let container = document.getElementsByClassName('jumbo-slider__container')[0], 
   slides = document.getElementsByClassName('jumbo-slider__slide'),
   circles = document.getElementsByClassName('jumbo-slider__circle'),
@@ -38,7 +41,48 @@ let init = () => {
     }, 6000)
   }
 
-  startSlide();
+  // startSlide();
+
+
+  // *************************************************
+  // Accordion Menu, located in the footer on mobile
+  // *************************************************
+  let accordion = document.getElementsByClassName('accordion-menu__contentBx');
+  let accordionContent = document.getElementsByClassName('amc');
+
+  for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function() {
+      this.classList.toggle('active');     
+    })
+  }
+
+  let openDropdown = () => {
+        // dropdownMenu.classList.toggle('trans--open');
+        // dropdownMenu.classList.toggle('opacity-100');
+        // caret.classList.toggle('rotate-180');
+        console.log(`accordion array: ${accordion}`);
+  }
+
+  // *************************************************
+  // Mobile Menu
+  // *************************************************
+  // mobile slide menu
+	let hamburgerBtn = document.getElementsByClassName('navbar-toggler')[0];
+
+	// slide Menu
+	let mobileMenu = document.getElementsByClassName('mobile-menu')[0];
+
+  // slide Menu close button X
+	let mobileCloseBtn = document.getElementsByClassName('mobile-menu__close-btn')[0];
+
+	// slide Menu close button X
+  hamburgerBtn.addEventListener('click', () => {
+		mobileMenu.classList.add('mobile-menu--open');
+	});
+
+	mobileCloseBtn.addEventListener('click', () => {
+		mobileMenu.classList.remove('mobile-menu--open');
+	});
 }
 
-// init();
+init();
