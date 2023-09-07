@@ -29,7 +29,10 @@ export default {
       },
       flex: {
         'gridish': '1 1 18em',
-      }
+      },
+      aspectRatio: {
+        'logoicons': '3 / 2',
+      },
     },
   },
   plugins: [],
