@@ -11,79 +11,84 @@
 </head>
 
 <body class="bg-gray-100 relative">
-  <div id="logodrop" class="fixed top-0 left-0 z-30 bg-white p-6 rounded-br-xl">
+  <div id="logodrop" class="fixed top-0 left-0 z-30 bg-white p-3.5 rounded-br-xl">
     <div class="page-header__logo">
-      <img class="object-contain h-12 md:h-20"
+      <img class="object-contain h-12 md:h-28"
         src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/black_logo_transparent_background.png"
         alt="">
     </div>
   </div>
   <header class="page-header bg-white text-black flex flex-row-reverse">
-    
+
     <nav class="navbar-toggler page-header__nav cursor-pointer flex flex-row-reverse md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
       </svg>
     </nav>
     <nav class="page-header__nav hidden md:flex flex-row">
       <a href="#" class="text-black capitalize self-center">services</a>
       <a href="#" class="text-black capitalize self-center">shop</a>
       <a href="#" class="text-black capitalize self-center">support</a>
-      <div class="rounded bg-cp2 p-2.5 rounded-lg hover:bg-violet-900 hove hover:shadow-xl transition duration-150 ease-in-out">
+      <div
+        class="rounded bg-cp2 p-2.5 rounded-lg hover:bg-violet-900 hove hover:shadow-xl transition duration-150 ease-in-out">
         <a href="#" class="block text-white capitalize">get started</a>
       </div>
     </nav>
+    <div class="jumbo-slider__timeline">
+      <div class="jumbo-slider__line">
+      </div>
+    </div>
   </header>
   <main>
     <section class="jumbo-slider">
       <ul class="jumbo-slider__container">
         <li class="jumbo-slider__slide" attr="1">
-          <!-- <div class="jumbo-slider__timeline">
-            <div class="jumbo-slider__line">
-            </div>
-          </div> -->
           <div class="jumbo-slider__slide-bg bg-skyline">
-            
+
           </div>
           <div class="container">
             <div class="jumbo-slider__info">
-              <div class="jumbo-slider__slide-number text-cp1 text-4xl md:text-6xl">
+              <div class="jumbo-slider__slide-number font-primary text-cp1 text-4xl md:text-6xl">
                 High-Speed,<br>
-                Affordable<br>
-                Internet For<br>
-                Our Community.
+                Starting @ <br>
+                $5 /Month
               </div>
               <!-- <div class="jumbo-slider__title">
                 Born to perform, developed to outperform
               </div> -->
-              <p class="jumbo-slider__description text-md md:text-xl">
-                Internet designed with you in mind! Check to see if your address is available for service now!
+              <p class="jumbo-slider__description font-secondary text-md font-semibold md:text-2xl">
+                No credit check, easy enrollment<br>
+                for ACP customers
               </p>
               <div id="pricing-table__subscribe-btn"
-                class="capitalze w-full md:w-[25%] border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 bg-cp2 text-white hover:bg-violet-900 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
+                class="jumbo-slider__cta-btn capitalze w-full md:w-[25%] border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 bg-cp2 text-white hover:bg-violet-900 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
                 get started
               </div>
             </div>
           </div>
         </li>
-        <li class="jumbo-slider__slide" attr="2">
+        <li class="jumbo-slider__slide jumbo-slider__slide--active" attr="2">
           <div class="jumbo-slider__slide-bg bg-cfamily">
           </div>
           <div class="container">
             <div class="jumbo-slider__info">
-              <div class="jumbo-slider__slide-number text-cp1 text-6xl">
-                Clayton County<br>
-                Packages and<br>
-                Pricing
+              <div class="jumbo-slider__slide-number text-cp1 text-4xl md:text-6xl">
+                High-Speed,<br>
+                Affordable Internet<br>
+                for Our Community
               </div>
-              <div class="jumbo-slider__title">
+              <!-- <div class="jumbo-slider__title">
                 Born to perform, developed to outperform
-              </div>
-              <p class="jumbo-slider__description text-xl">
-                Affordable, Hi-Speed Internet is coming<br>
-                to your neighborhood. Check if you are<br>
-                ACP Qualified <a href="#" class="text-cp1 font-semibold">Here</a>
+              </div> -->
+              <p class="jumbo-slider__description font-secondary text-md font-semibold md:text-2xl">
+                Internet designed with you in mind! Check if service is available in your community
               </p>
+              <div id="pricing-table__subscribe-btn"
+              class="jumbo-slider__cta-btn capitalze w-full md:w-[25%] border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 bg-cp2 text-white hover:bg-violet-900 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
+              get started
+            </div>
             </div>
           </div>
           <!-- <div class="jumbo-slider__timeline">
@@ -91,49 +96,52 @@
             </div>
           </div> -->
         </li>
-        <!-- <li class="jumbo-slider__slide" attr="3">
-          <div class="jumbo-slider__slide-bg">
-            <iframe class="jumbo-slider__video-player" width="560" height="315"
+        <li class="jumbo-slider__slide" attr="3">
+          <div class="jumbo-slider__slide-bg bg-familys">
+            <!-- <iframe class="jumbo-slider__video-player" width="560" height="315"
               src="https://www.youtube.com/embed/1K-9w93O3-g?autoplay=1&mute=1&t=0m0s" title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
-            </iframe>
+            </iframe> -->
           </div>
           <div class="container">
             <div class="jumbo-slider__info">
-              <div class="jumbo-slider__slide-number">
-                03
+              <div class="jumbo-slider__slide-number text-cp1 text-md font-semibold md:text-2xl">
+                24/7 Customer Service w/ Local Representatives
               </div>
-              <div class="jumbo-slider__title">
+              <!-- <div class="jumbo-slider__title">
                 Born to perform, developed to outperform
-              </div>
-              <p class="jumbo-slider__description">
-                Forged aluminum dominates the 4-wheel double-wishbone AMG RIDE CONTROL suspension with 3-stage damping.
-                Coil-overs at the rear are hub-mounted for extreme precision. The GT C adds active rear-wheel steering.
-                AMG DYNAMIC SELECT lets you dial in the throttle, shifting, chassis, exhaust and more.
+              </div> -->
+              <p class="jumbo-slider__description text-lg md:text-xl">
+                 Customer service that is connected to those we serve.
               </p>
+              <div id="pricing-table__subscribe-btn"
+              class="jumbo-slider__cta-btn capitalze w-full md:w-[25%] border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 bg-cp2 text-white hover:bg-violet-900 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
+              get started
+            </div>
             </div>
           </div>
-           <div class="jumbo-slider__timeline">
-            <div class="jumbo-slider__line">
-            </div>
-          </div>
-        </li> -->
+        </li>
       </ul>
       <div class="jumbo-slider__nav">
-        <!-- <a href="#" class="jumbo-slider__link text-cp1">Clayton</a> -->
         <a href="#" class="jumbo-slider__link">Affordable</a>
-        <a href="#" class="jumbo-slider__link">internet</a>
+        <a href="#" class="jumbo-slider__link">Community</a>
+        <a href="#" class="jumbo-slider__link">Service</a>
       </div>
       <div class="jumbo-slider__elipsis">
-        <div class="jumbo-slider__circle bg-cp1"></div>
         <div class="jumbo-slider__circle border-solid border border-cp1"></div>
-        <!-- <div class="jumbo-slider__circle border-solid border border-cp1"></div> -->
+        <div class="jumbo-slider__circle border-solid border border-cp1"></div>
+        <div class="jumbo-slider__circle border-solid border border-cp1"></div>
+      </div>
+      <div class="jumbo-slider__elipsis-mobile">
+        <div class="jumbo-slider__circle border-solid border border-cp1"></div>
+        <div class="jumbo-slider__circle border-solid border border-cp1"></div>
+        <div class="jumbo-slider__circle border-solid border border-cp1"></div>
       </div>
     </section>
   </main>
-  <section id="features" class="mt-11 md:mt-40">
+  <section id="features" class="mt-11 md:mt-20">
     <!-- flex container -->
     <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
       <div class="flex flex-col space-y-12 md:w-1/2">
@@ -215,14 +223,15 @@
     <div id="pricing-tables__container" class="container px-4 mx-auto mt-10 flex flex-wrap">
       <!-- plan 1 -->
       <div id="pricing-tables__table"
-        class="flex-gridish mb-4 bg-white rounded-lg shadow mb-4 hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
-        <h3 id="pricing-tables__plan" class="text-gray-600 text-lg">100 Mbps</h3>
+        class="pricing-tables__table-rr flex-gridish mb-4 bg-white rounded-lg shadow mb-4 hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
+        <div class="ribbon ribbon__color-1"><span>ACP Plan</span></div>
+        <h3 id="pricing-tables__plan" class="text-gray-600 text-lg mt-5">100 Mbps</h3>
         <h6 class="text-sm text-cp2 mt-2">starting at</h6>
         <p id="pricing-tables__price" class="text-gray-600 mt-1"><span class="font-bold text-black text-4xl">$5</span>
           /Month</p>
-        <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">For most that want to optimize their queries</p>
+        <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">Free Installation</p>
         <div id="pricing-tables__perks" class="text-sm text-gray-600 mt-4">
-          <p id="pricing-table__perk-items" class="my-2">
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
@@ -230,8 +239,9 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2u">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6  mr-2 ml-1">
@@ -239,8 +249,9 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2u">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
@@ -248,8 +259,9 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2u">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
@@ -257,7 +269,8 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
         </div>
         <div id="pricing-table__subscribe-btn"
           class="capitalze w-full border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-cp2 hover:bg-cp2 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
@@ -266,22 +279,23 @@
       <!-- plan 2 -->
       <div id="pricing-tables__table"
         class="flex-gridish mb-4 bg-white rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
-        <h3 id="pricing-tables__plan" class="text-gray-600 text-lg">300 Mbps</h3>
+        <h3 id="pricing-tables__plan" class="text-gray-600 text-lg mt-5">300 Mbps</h3>
         <h6 class="text-sm text-cp2 mt-2">starting at</h6>
         <p id="pricing-tables__price" class="text-gray-600 mt-1"><span class="font-bold text-black text-4xl">$35</span>
           /Month</p>
-        <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">For most that want to optimize their queries</p>
+        <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">Free Installation</p>
         <div id="pricing-tables__perks" class="text-sm text-gray-600 mt-4">
-          <p id="pricing-table__perk-items" class="my-2">
-            <span id="pricing-tables__icon" class="text-cp2u">
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
+            <span id="pricing-tables__icon" class="text-cp2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2u">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6  mr-2 ml-1">
@@ -289,8 +303,9 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2u">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
@@ -298,8 +313,9 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2u">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
@@ -307,8 +323,8 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
         </div>
         <div id="pricing-table__subscribe-btn"
           class="capitalze w-full border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-cp2 hover:bg-cp2 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
@@ -317,14 +333,15 @@
 
       <!-- plan 3 -->
       <div id="pricing-tables__table"
-        class="flex-gridish mb-4 bg-cp2 rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
-        <h3 id="pricing-tables__plan" class="text-white text-lg">500 Mbps</h3>
+        class="pricing-tables__table-rr flex-gridish mb-4 bg-cp2 rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
+        <div class="ribbon ribbon__color-2"><span>Recommended Plan</span></div>
+        <h3 id="pricing-tables__plan" class="text-white text-lg mt-5">500 Mbps</h3>
         <h6 class="text-sm text-white mt-2">starting at</h6>
         <p id="pricing-tables__price" class="text-white mt-1"><span class="font-bold text-white text-4xl">$55</span>
           /Month</p>
-        <p id="pricing-tables__about-plan" class="text-white mt-2">For most that want to optimize their queries</p>
+        <p id="pricing-tables__about-plan" class="text-white mt-2">Free Installation</p>
         <div id="pricing-tables__perks" class="text-sm text-whiteP mt-4">
-          <p id="pricing-table__perk-items" class="my-2">
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
@@ -332,8 +349,9 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6  mr-2 ml-1">
@@ -341,8 +359,9 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
@@ -350,8 +369,9 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
+          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
@@ -359,8 +379,8 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-
+            <p class="block">HD streaming, virtual learning, downloading</p>
+          </div>
         </div>
         <div id="pricing-table__subscribe-btn"
           class="capitalze w-full border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 bg-cp1 text-white hover:text-cp2 hover:bg-white hover:shadow-xl transition duration-150 ease-in-out">
@@ -369,52 +389,25 @@
       <!-- plan 4 -->
       <div id="pricing-tables__table"
         class="flex-gridish mb-4 bg-white rounded-lg shadow hover:shadow-xl transition duration-100 ease-in-out p-6 mr-4">
-        <h3 id="pricing-tables__plan" class="text-gray-600 text-lg">1 Gbps</h3>
+        <h3 id="pricing-tables__plan" class="text-gray-600 text-lg mt-5">1 Gbps</h3>
         <!-- <h6 class="text-sm text-cp2 mt-2">starting at</h6> -->
         <!-- <p id="pricing-tables__price" class="text-gray-600 mt-1"><span class="font-bold text-black text-4xl">$35</span>
           /Month</p> -->
         <p id="pricing-tables__price" class="text-gray-600 mt-2.5 mb-7">
           <span class="font-bold text-black text-2xl capitalize">call for pricing</span>
         </p>
-        <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">For most that want to optimize their queries</p>
+        <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">For Business</p>
         <div id="pricing-tables__perks" class="text-sm text-gray-600 mt-4">
-          <p id="pricing-table__perk-items" class="my-2">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
+          <div id="pricing-table__perk-items" class="my-2 mb-20 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6  mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-          </p>
-          <p id="pricing-table__perk-items" class="my-2">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-          </p>
-
+            <p class="block">Whether you're a landlord hoping to improve your amenities or making sure your business has the most reliable enterprise services, we have plans that fit your budget and needs.</p>
+          </div>
         </div>
         <div id="pricing-table__subscribe-btn"
           class="capitalze w-full border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-cp2 hover:bg-cp2 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
@@ -422,13 +415,11 @@
       </div>
     </div>
   </section>
-  <section id="acp-notice" class="mt-11 md:mt-40">
+  <section id="acp-notice" class="mt-11 md:mt-24">
     <div id="acp-notice__container" class="container px-4 mx-auto mt-10 grid gap-6 md:grid-flow-col md:auto-cols-fr">
-      <div class="">
+      <div class="mt-0 md:mt-36">
         <h1 class="text-black font-primary font-semibold text-3xl">$30 Monthly discount to all qualified <span
             class="text-cp2">Affordable Connectivity Program</span> Customers</h1>
-      </div>
-      <div class="">
         <p class="w-3/4 text-base font-secondary text-black">Am I eligible for the Affordable Connectivity Program?
           Click here to see if you qualify.</p>
         <div id="acp-notice__check-btn"
@@ -436,6 +427,53 @@
           learn more
         </div>
       </div>
+      <div class="form__area">
+        <div class="wrapper" id="app">
+          <div class="card-form__inner">
+            <h1 class="font-primary text-black text-3xl font-semibold mb-2.5">
+              Not yet available in your community?
+            </h1>
+            <p class="font-secondary text-black mb-12 font-medium">
+              Sign up to become a CULTURE CONNECTOR and keep informed of our latest plans, news, and events.
+            </p>
+            <div class="flex flex-wrap">
+              
+           
+            <div class="card-input w-full md:w-[48%] inline-block">
+              <label for="cardNumber" class="card-input__label">Name</label>
+              <input type="text" id="cardNumber" class="card-input__input" v-mask="generateCardNumberMask"
+                v-model="cardNumber" v-on:focus="focusInput" v-on:blur="blurInput" data-ref="cardNumber"
+                autocomplete="off">
+            </div>
+            <div class="card-input ml-0 md:ml-2 w-full md:w-[48%] inline-block">
+              <label for="cardName" class="card-input__label">Phone Number</label>
+              <input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput"
+                v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+            </div>
+            <div class="card-input w-full md:w-[48%]">
+              <label for="cardName" class="card-input__label">Location</label>
+              <input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput"
+                v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+            </div>
+            <div class="card-input ml-0 md:ml-2 w-full md:w-[48%]">
+              <label for="cardName" class="card-input__label">Email</label>
+              <input type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput"
+                v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+            </div>
+          </div>
+            <div class="card-input">
+              <label for="cardName" class="card-input__label">Message</label>
+              <textarea type="text" id="cardName" class="card-input__input" v-model="cardName" v-on:focus="focusInput"
+                v-on:blur="blurInput" data-ref="cardName" autocomplete="off"></textarea>
+            </div>
+            <div id="acp-notice__check-btn"
+              class="capitalze w-full border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-white bg-cp2 hover:bg-violet-900 hover:shadow-xl transition duration-150 ease-in-out">
+              Submit
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
   <section id="about-us" class="mt-11 md:mt-40 bg-gradient-to-r from-cp2 to-cp3">
@@ -447,13 +485,12 @@
             alt="" class="rounded-xl">
         </div>
         <div id="about-us__paragraph" class="">
-          <h1 class="text-white font-primary font-semibold text-xl bg-cp1 block w-[33%] text-center rounded py-2">About
-            Us</h1>
           <h1 id="about-us__heading" class="text-3xl mt-4 font-semibold text-white font-primary">We Are Changing the Way
             the World Thinks About Internet</h1>
-          <p class="w-full lg:w-3/4  text-xl font-secondary text-white mt-7">Even in 2022, between 9 to 12 million
-            children in the U.S. and 1.3 billion worldwide lack access to quality and affordable Internet. Historically
-            excluded communities are missing out on growth opportunities without internet access.</p>
+            <p class="w-full lg:w-3/4  text-xl font-secondary text-white mt-7">Even in 2022, between 9 to 12 million
+              children in the U.S. and 1.3 billion worldwide lack access to quality and affordable Internet. Historically
+              excluded communities are missing out on growth opportunities without internet access.</p>
+              <button class="text-white font-primary font-semibold text-xl bg-cp1 block w-full md:w-[33%] mt-12 text-center rounded py-2">AboutUs</button>
         </div>
       </div>
     </div>
@@ -461,21 +498,21 @@
   <section id="partners" class="mt-11 md:mt-40">
     <div id="partners__container" class="container px-4 mx-auto mt-10 flex flex-col items-center flex-wrap">
       <h2 class="text-black text-bold text-4xl mb-5">Our Partners</h2>
-      <div id="partners__container" class="grid gap-6 md:grid-flow-col md:auto-cols-fr">
-        <div id="partners__img-container" class="flex"><img class="object-contain  block h-16"
+      <div id="partners__container" class="ml-36 grid gap-6 md:grid-flow-col md:auto-cols-fr">
+        <div id="partners__img-container" class="aspect-logoicons w-[20%] md:w-[50%] md:w-[60%] object-contain flex justify-center"><img class="block h-16"
             src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/20a21fb9373f1c605e003a7a9466741db7f3cab9/assets/images/630bb0b7e88bc05f521f724a_logo.svg"
             alt=""></div>
-        <div id="partners__img-container" class="flex justify-center"><img class="object-contain  block h-16"
+        <div id="partners__img-container" class="aspect-logoicons w-[20%] md:w-[25%] object-contain flex md:justify-center"><img class="object-contain  block h-16"
             src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/630bb2bbc302738922aac9d9_East-Point-Logo-New-removebg-preview.webp"
             alt=""></div>
-        <div id="partners__img-container" class="flex"><img class="object-contain  block h-16"
+        <div id="partners__img-container" class="aspect-logoicons w-[25%] md:w-[50%] object-contain flex md:justify-center"><img class="object-contain  block h-16"
             src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/6310dfdc9176f1379518f9d2_logoGNC-removebg-preview.webp"
             alt=""></div>
-        <div id="partners__img-container" class="flex justify-center"><img class="object-contain  block h-16"
+        <div id="partners__img-container" class="aspect-logoicons w-[20%] md:w-[45%] object-contain flex"><img class="object-contain  block h-16"
             src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/630d889d2b4487282fd73d3a_Microsoft-Logo-p-500.webp"
             alt=""></div>
-        <div id="partners__img-container" class="flex justify-center md:justify-start"><img
-            class="object-contain  block h-16"
+        <div id="partners__img-container" class="aspect-logoicons w-[25%] md:w-[45%] object-contain flex justify-center"><img
+            class="object-contain block h-16"
             src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/630e318eeec8a9bd9e386e86_Crown_Castle-Logo.png"
             alt=""></div>
       </div>
@@ -486,7 +523,8 @@
       <!-- Flex Container -->
       <div class="flex flex-col-reverse justify-between py-10 mx-auto space-x-0 md:flex-row md:space-x-12">
         <!-- Logo and social links container -->
-        <div class="flex flex-col-reverse items-center mt-6 justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+        <div
+          class="flex flex-col-reverse items-center mt-6 justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
           <!-- Logo -->
           <a href="#" class="">
             <div class="flex flex-col items-left space-y-8 text-airbBlanco text-lg">
@@ -502,14 +540,15 @@
           </a>
         </div>
         <!-- List Container -->
-         <!-- Accordion Container -->
-         <div id="accordion-menu" class="grid md:hidden max-w-3xl">
+        <!-- Accordion Container -->
+        <div id="accordion-menu" class="grid md:hidden max-w-3xl">
           <div class="accordion-menu__contentBx">
             <div class="accordion-menu__label">
               <span class="uppercase">sitemap</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-              </svg>              
+              </svg>
             </div>
             <div class="accordion-menu__content space-y-2">
               <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">home</a>
@@ -523,9 +562,10 @@
           <div class="accordion-menu__contentBx">
             <div class="accordion-menu__label">
               <span class="uppercase">company</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-              </svg>              
+              </svg>
             </div>
             <div class="accordion-menu__content">
               <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">about us</a>
@@ -538,13 +578,18 @@
           <div class="accordion-menu__contentBx">
             <div class="accordion-menu__label ">
               <span class="uppercase">social</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-              </svg>              
+              </svg>
             </div>
             <div class="accordion-menu__content flex">
               <a href="#" class="mb-3.5 hover:text-brightRed text-md font-light font-secondary capitalize flex mt-4">
-                <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5">
+                  <path
+                    d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
                 <span class="ml-2">facebook</span>
               </a>
               <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
@@ -552,12 +597,12 @@
                 <span class="ml-2">twitter</span>
               </a>
               <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
-                <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5">
+                  <path
+                    d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
                 <span class="ml-2">linkedin</span>
-              </a>
-              <a href="#" class="hover:text-brightRed font-secondary capitalize flex">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5px"><g><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><rect x="0.73" y="2.5" width="22.54" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect><line x1="19.48" y1="21.5" x2="4.48" y2="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
-                <span class="ml-2">youtube</span>
               </a>
             </div>
           </div>
@@ -583,7 +628,11 @@
           <div class="flex flex-col text-white">
             <a href="#" class="hover:text-brightRed mb-4 font-semibold text-md uppercase font-primary">social</a>
             <a href="#" class="mb-3.5 hover:text-brightRed text-md font-light font-secondary capitalize flex">
-              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5">
+                <path
+                  d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z"
+                  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
               <span class="ml-2">facebook</span>
             </a>
             <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
@@ -591,11 +640,26 @@
               <span class="ml-2">twitter</span>
             </a>
             <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
-              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5">
+                <path
+                  d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z"
+                  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
               <span class="ml-2">linkedin</span>
             </a>
             <a href="#" class="hover:text-brightRed font-secondary capitalize flex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5px"><g><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><rect x="0.73" y="2.5" width="22.54" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect><line x1="19.48" y1="21.5" x2="4.48" y2="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5px">
+                <g>
+                  <path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <rect x="0.73" y="2.5" width="22.54" height="15.5" rx="2" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round"></rect>
+                  <line x1="19.48" y1="21.5" x2="4.48" y2="21.5" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+              </svg>
               <span class="ml-2">youtube</span>
             </a>
           </div>
@@ -612,26 +676,27 @@
   <section class="mobile-menu z-40 bg-[#232329]">
     <div class="mobile-menu__sticky-logo relative">
       <a class="mobile-menu__logo z-10">
-        <img class="new-header__clarks-logo align-content-center object-contain h-20" src="./assets/images/white-logo.png" alt="clarks">
+        <img class="new-header__clarks-logo align-content-center object-contain h-20"
+          src="./assets/images/white-logo.png" alt="clarks">
       </a>
 
       <div class="mobile-menu__close-btn dick p-6 z-30 absolute top-0 left-0">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>      
+        </svg>
       </div>
     </div>
 
-    
-    
     <div class="mobile-menu__links">
       <div id="accordion-menu" class="grid md:hidden max-w-3xl">
         <div class="accordion-menu__contentBx">
           <div class="accordion-menu__label">
             <span class="uppercase">sitemap</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>              
+            </svg>
           </div>
           <div class="accordion-menu__content space-y-2">
             <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">home</a>
@@ -645,9 +710,10 @@
         <div class="accordion-menu__contentBx">
           <div class="accordion-menu__label">
             <span class="uppercase">company</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>              
+            </svg>
           </div>
           <div class="accordion-menu__content">
             <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">about us</a>
@@ -660,13 +726,18 @@
         <div class="accordion-menu__contentBx">
           <div class="accordion-menu__label ">
             <span class="uppercase">social</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>              
+            </svg>
           </div>
           <div class="accordion-menu__content flex">
             <a href="#" class="mb-3.5 hover:text-brightRed text-md font-light font-secondary capitalize flex mt-4">
-              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5">
+                <path
+                  d="M18.13,7.75H13.87V5.84a1,1,0,0,1,1-1.1h3v-4H13.54c-3.93,0-4.67,3-4.67,4.86V7.75h-3v4h3v11.5h5V11.75h3.85Z"
+                  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
               <span class="ml-2">facebook</span>
             </a>
             <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
@@ -674,12 +745,12 @@
               <span class="ml-2">twitter</span>
             </a>
             <a href="#" class="mb-3.5 hover:text-brightRed font-secondary capitalize flex">
-              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5"><path d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              <svg viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg" stroke-width="1.5">
+                <path
+                  d="M5.67,22.63H.81V8.7H5.67Zm10.09-9.39a2.14,2.14,0,0,0-2.14,2.14v7.25H8.51V8.7h5.11v1.59a6.76,6.76,0,0,1,4.28-1.6c3.17,0,5.37,2.35,5.37,6.81v7.13H17.9V15.38A2.14,2.14,0,0,0,15.76,13.23Zm-10-9.36a2.5,2.5,0,1,1-2.5-2.5A2.5,2.5,0,0,1,5.74,3.88Z"
+                  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
               <span class="ml-2">linkedin</span>
-            </a>
-            <a href="#" class="hover:text-brightRed font-secondary capitalize flex">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5px"><g><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.22,7.15a.5.5,0,0,0-.74.44v5.32a.5.5,0,0,0,.74.44l4.94-2.66a.49.49,0,0,0,0-.88Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><rect x="0.73" y="2.5" width="22.54" height="15.5" rx="2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></rect><line x1="19.48" y1="21.5" x2="4.48" y2="21.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
-              <span class="ml-2">youtube</span>
             </a>
           </div>
         </div>
@@ -694,5 +765,4 @@
   </section>
   <script type="module" src="./assets/js/main.js"></script>
 </body>
-
 </html>

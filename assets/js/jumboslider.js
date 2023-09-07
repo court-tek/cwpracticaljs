@@ -7,7 +7,7 @@
     circles = document.getElementsByClassName('jumbo-slider__circle'),
     links = document.getElementsByClassName('jumbo-slider__link'),
     current = 1,
-    time = 20000;
+    time = 5000;
 
 
     //add animation class to slide
