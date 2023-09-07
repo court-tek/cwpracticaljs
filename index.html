@@ -13,9 +13,11 @@
 <body class="bg-gray-100 relative">
   <div id="logodrop" class="fixed top-0 left-0 z-30 bg-white p-3.5 rounded-br-xl">
     <div class="page-header__logo">
-      <img class="object-contain h-12 md:h-28"
+      <a href="">
+      <img class="object-contain h-12 md:h-32"
         src="https://raw.githubusercontent.com/court-tek/cwpracticaljs/newculture/assets/images/black_logo_transparent_background.png"
         alt="">
+      </a>
     </div>
   </div>
   <header class="page-header bg-white text-black flex flex-row-reverse">
@@ -28,11 +30,11 @@
       </svg>
     </nav>
     <nav class="page-header__nav hidden md:flex flex-row">
-      <a href="#" class="text-black capitalize self-center">services</a>
-      <a href="#" class="text-black capitalize self-center">shop</a>
-      <a href="#" class="text-black capitalize self-center">support</a>
-      <div
-        class="rounded bg-cp2 p-2.5 rounded-lg hover:bg-violet-900 hove hover:shadow-xl transition duration-150 ease-in-out">
+      <a href="https://www.goculturewireless.com/" class="text-black font-semibold capitalize self-center">home</a>
+      <a href="https://www.goculturewireless.com/services" class="text-black font-semibold capitalize self-center">services</a>
+      <a href="https://www.goculturewireless.com/support" class="text-black font-semibold capitalize self-center">support</a>
+      <a href="https://customerportal.goculturewireless.com/" class="text-black font-semibold capitalize self-center">my account</a>
+      <div class="page-header__cta-btn rounded bg-cp2 p-2.5 rounded-lg hover:bg-violet-900 hove hover:shadow-xl transition duration-150 ease-in-out">
         <a href="#" class="block text-white capitalize">get started</a>
       </div>
     </nav>
@@ -44,7 +46,7 @@
   <main>
     <section class="jumbo-slider">
       <ul class="jumbo-slider__container">
-        <li class="jumbo-slider__slide" attr="1">
+        <li class="jumbo-slider__slide gradient-overlay" attr="1">
           <div class="jumbo-slider__slide-bg bg-skyline">
 
           </div>
@@ -129,7 +131,7 @@
         <a href="#" class="jumbo-slider__link">Community</a>
         <a href="#" class="jumbo-slider__link">Service</a>
       </div>
-      <div class="jumbo-slider__elipsis">
+      <!-- <div class="jumbo-slider__elipsis">
         <div class="jumbo-slider__circle border-solid border border-cp1"></div>
         <div class="jumbo-slider__circle border-solid border border-cp1"></div>
         <div class="jumbo-slider__circle border-solid border border-cp1"></div>
@@ -138,7 +140,7 @@
         <div class="jumbo-slider__circle border-solid border border-cp1"></div>
         <div class="jumbo-slider__circle border-solid border border-cp1"></div>
         <div class="jumbo-slider__circle border-solid border border-cp1"></div>
-      </div>
+      </div> -->
     </section>
   </main>
   <section id="features" class="mt-11 md:mt-20">
@@ -160,7 +162,11 @@
           <!-- heading -->
           <div class="rounded-l-full bg-cp2 md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">01</div>
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+              </svg>
+              </div>
               <h3 class="text-base text-white font-bold md:mb-4 md:hidden font-primary">
                 Affordable Price
               </h3>
@@ -181,7 +187,12 @@
           <!-- heading -->
           <div class="rounded-l-full bg-cp2 md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">02</div>
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                </svg>
+                
+              </div>
               <h3 class="text-base text-white font-bold md:mb-4 md:hidden font-primary">
                 community engagement
               </h3>
@@ -200,7 +211,12 @@
           <!-- heading -->
           <div class="rounded-l-full bg-cp2 md:bg-transparent">
             <div class="flex items-center space-x-2">
-              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">03</div>
+              <div class="px-4 py-2 text-white rounded-full md:py-1 bg-cp2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                </svg>
+                
+              </div>
               <h3 class="text-base text-white font-bold md:mb-4 md:hidden font-primary">
                 24/7 support
               </h3>
@@ -230,7 +246,7 @@
         <p id="pricing-tables__price" class="text-gray-600 mt-1"><span class="font-bold text-black text-4xl">$5</span>
           /Month</p>
         <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">Free Installation</p>
-        <div id="pricing-tables__perks" class="text-sm text-gray-600 mt-4">
+        <div id="pricing-tables__perks" class="text-sm mb-36 text-gray-600 mt-4">
           <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -239,37 +255,7 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6  mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
+            <p class="block">Fast reliable Internet that satisfies all the needs of your household.</p>
           </div>
         </div>
         <div id="pricing-table__subscribe-btn"
@@ -284,7 +270,7 @@
         <p id="pricing-tables__price" class="text-gray-600 mt-1"><span class="font-bold text-black text-4xl">$35</span>
           /Month</p>
         <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">Free Installation</p>
-        <div id="pricing-tables__perks" class="text-sm text-gray-600 mt-4">
+        <div id="pricing-tables__perks" class="text-sm mb-36 text-gray-600 mt-4">
           <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -293,38 +279,8 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6  mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-cp2u">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
+            <p class="block">Faster, reliable internet for the household that works and plays online.</p>
+          </div>  
         </div>
         <div id="pricing-table__subscribe-btn"
           class="capitalze w-full border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-cp2 hover:bg-cp2 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
@@ -340,7 +296,7 @@
         <p id="pricing-tables__price" class="text-white mt-1"><span class="font-bold text-white text-4xl">$55</span>
           /Month</p>
         <p id="pricing-tables__about-plan" class="text-white mt-2">Free Installation</p>
-        <div id="pricing-tables__perks" class="text-sm text-whiteP mt-4">
+        <div id="pricing-tables__perks" class="text-sm mb-20 text-whiteP mt-4">
           <div id="pricing-table__perk-items" class="my-2 flex flex-row">
             <span id="pricing-tables__icon" class="text-white">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -349,37 +305,7 @@
                   d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6  mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
-          </div>
-          <div id="pricing-table__perk-items" class="my-2 flex flex-row">
-            <span id="pricing-tables__icon" class="text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 mr-2 ml-1">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </span>
-            <p class="block">HD streaming, virtual learning, downloading</p>
+            <p class="block">Our Fastest, most reliable, residential internet for families with multiple devices online simultaneously. Working, playing, or simply living... CULTURE CONNECTS.</p>
           </div>
         </div>
         <div id="pricing-table__subscribe-btn"
@@ -397,7 +323,7 @@
           <span class="font-bold text-black text-2xl capitalize">call for pricing</span>
         </p>
         <p id="pricing-tables__about-plan" class="text-gray-600 mt-2">For Business</p>
-        <div id="pricing-tables__perks" class="text-sm text-gray-600 mt-4">
+        <div id="pricing-tables__perks" class="text-sm text-gray-600 mb-20 mt-4">
           <div id="pricing-table__perk-items" class="my-2 mb-20 flex flex-row">
             <span id="pricing-tables__icon" class="text-cp2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -411,7 +337,8 @@
         </div>
         <div id="pricing-table__subscribe-btn"
           class="capitalze w-full border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-cp2 hover:bg-cp2 hover:text-white hover:shadow-xl transition duration-150 ease-in-out">
-          choose plan</div>
+          choose plan
+        </div>
       </div>
     </div>
   </section>
@@ -490,7 +417,7 @@
             <p class="w-full lg:w-3/4  text-xl font-secondary text-white mt-7">Even in 2022, between 9 to 12 million
               children in the U.S. and 1.3 billion worldwide lack access to quality and affordable Internet. Historically
               excluded communities are missing out on growth opportunities without internet access.</p>
-              <button class="text-white font-primary font-semibold text-xl bg-cp1 block w-full md:w-[33%] mt-12 text-center rounded py-2">AboutUs</button>
+              <button class="text-white font-primary font-semibold text-xl bg-cp1 block w-full md:w-[33%] mt-12 text-center rounded py-2"><a href="">AboutUs</a></button>
         </div>
       </div>
     </div>
@@ -699,12 +626,12 @@
             </svg>
           </div>
           <div class="accordion-menu__content space-y-2">
-            <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">home</a>
-            <a href="#" class="hover:text-brightRed font-secondary capitalize">services</a>
+            <a href="https://www.goculturewireless.com/" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">home</a>
+            <a href="https://www.goculturewireless.com/services" class="hover:text-brightRed font-secondary capitalize">services</a>
             <a href="#" class="hover:text-brightRed font-secondary capitalize">community</a>
             <a href="#" class="hover:text-brightRed font-secondary capitalize">blog</a>
-            <a href="#" class="hover:text-brightRed font-secondary capitalize">acp</a>
-            <a href="#" class="hover:text-brightRed font-secondary capitalize">contact us</a>
+            <a href="https://www.goculturewireless.com/acp" class="hover:text-brightRed font-secondary capitalize">acp</a>
+            <a href="https://www.goculturewireless.com/contact" class="hover:text-brightRed font-secondary capitalize">contact us</a>
           </div>
         </div>
         <div class="accordion-menu__contentBx">
@@ -716,9 +643,9 @@
             </svg>
           </div>
           <div class="accordion-menu__content">
-            <a href="#" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">about us</a>
-            <a href="#" class="hover:text-brightRed font-secondary capitalize">careers</a>
-            <a href="#" class="hover:text-brightRed font-secondary capitalize">inquiries</a>
+            <a href="https://www.goculturewireless.com/about-us" class="hover:text-brightRed text-md font-light font-secondary capitalize mt-4">about us</a>
+            <a href="https://www.goculturewireless.com/careers" class="hover:text-brightRed font-secondary capitalize">careers</a>
+            <a href="https://www.goculturewireless.com/inquiries" class="hover:text-brightRed font-secondary capitalize">inquiries</a>
             <a href="#" class="hover:text-brightRed font-secondary capitalize">privacy policy</a>
             <a href="#" class="hover:text-brightRed font-secondary capitalize">terms & conditions</a>
           </div>
@@ -761,6 +688,37 @@
       <div class="text-white text-center md:block">
         Culture Wireless Copyright &copy; 2022, All Rights Reserved
       </div>
+    </div>
+  </section>
+  <section class="phone-modal">
+    <div class="phone-modal__close-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>      
+      </div>
+    </div>
+
+    <div class="phone-modal__container rounded-xl">
+      <div class="phone-modal__info">
+        <h1 class="font-primary text-2xl font-semibold">Are you covered by our services?</h1>
+        <p class="font-secondary text-md">Please validate info below.</p>
+        <div class="card-input w-full inline-block">
+          <label for="cardName" class="card-input__label">Phone Number</label>
+          <input type="text" id="cardName" placeholder="5029 Oak Ave, Dayton Beach, FL 32104" class="card-input__input" v-model="cardName" v-on:focus="focusInput"
+            v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+        </div>
+        <h1 class="font-primary text-2xl font-semibold">If you have one, please enter your apartment or unit number.</h1>
+        <p class="font-secondary text-md">Apartment number (apartment, office, suite)</p>
+        <div class="card-input w-full">
+          <label for="cardName" class="card-input__label">Location</label>
+          <input type="text" id="cardName" placeholder="Letter or Number" class="card-input__input" v-model="cardName" v-on:focus="focusInput"
+            v-on:blur="blurInput" data-ref="cardName" autocomplete="off">
+        </div>
+        <div id="acp-notice__check-btn"
+        class="capitalze w-full border border-cp2 rounded text-center text-xl capitalize py-2 mt-4 text-white bg-cp2 hover:bg-violet-900 hover:shadow-xl transition duration-150 ease-in-out">
+        Submit
+      </div>
+       </div>
     </div>
   </section>
   <script type="module" src="./assets/js/main.js"></script>
