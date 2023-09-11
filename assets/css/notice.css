@@ -1,0 +1,13 @@
+.heading-purp {
+    color: hsl(261, 34%, 40%);
+}
+
+.acp-btn {
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .acp-btn {
+        width: 100% !important;
+    }
+}
